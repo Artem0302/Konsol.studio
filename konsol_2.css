@@ -7,9 +7,8 @@ body{
 /*дом,кто мы*/
 .home{
     background: url(back_header.png);
-
 	min-height:900px;
-	height: 110vh;
+	height: auto;
 }
 .bg-img{
 	background-size: cover;
@@ -17,7 +16,7 @@ body{
 ;
 }
 .intro-box{
-	height: 100vh;
+	height: 90vh;
 	position: relative;
 	display: table;
 	text-align: center;
@@ -37,7 +36,6 @@ body{
   color:Linen;
   outline: none;
   border: 2px solid Linen;
-  box-shadow: none;
   border-radius: 4px;
 }
 .button1:hover{
@@ -55,7 +53,7 @@ body{
 	border-radius: 40px;
 	background:white;
 	margin: auto;
-	bottom: 12vh;
+	bottom: 2vh;
 }
 .anchor:hover{
 	background-color: Crimson;
@@ -68,7 +66,7 @@ body{
 	display: inline-block;	
 }
 header{
-  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 	padding: 15px;
 	font-size: 30px;
 }
@@ -83,7 +81,7 @@ header{
 	font-family:Сomic Sans MS;
 	color:White;
 	text-decoration: none;
-	margin-left: 10px;
+	margin: 10px;
 	font-size: 100%;
 }
 .a:hover{
@@ -91,6 +89,106 @@ header{
 	text-decoration: underline;
 }
 
+/*Блог*/
+.blog{
+	display: inline-block;
+	text-align: center;
+	background-color: #f8f8f8;
+	width: 100%;
+}
+
+/*Фотки*/
+.photo{
+  display: flex;
+  flex-wrap: wrap; 
+}
+.img-p{
+	width: 25%;
+}
+
+/*Портфолио*/
+.portfolio{
+	display: flex;
+	align-items: center;
+    justify-content:space-around;
+    background-image: url(back_portf.png);
+    padding: 10vh;
+}
+.favourites{
+    
+	color: white;
+	text-align: center;
+	margin-left: 5vh;
+}
+
+.ball{
+	margin: auto;
+	display: flex;
+	width: 50px;
+    height: 50px;
+    justify-content:center;
+    align-items:center;
+	border: 2px solid Linen;
+	border-radius: 40px;
+	background:none;
+	font-size: 150%;
+}
+
+/*Цены*/
+.pricing{
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.top-bar{
+	display: inline-block;
+	text-align: center;
+	width: 100%;
+}
+.button2{
+  margin: 2vh;
+  font-size:100%; 
+  background:silver; 
+  color:inherit;
+  outline: none;
+  border: 2px solid silver;
+  border-radius: 4px;
+}
+.button2:hover{
+  	background-color:Crimson; 
+	cursor:pointer;
+    color: Linen;
+}
+.box{
+	border: 2px solid silver;
+	border-radius: 4px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-color: Azure;
+}
+.circle{
+	font-size: 120%;
+    box-shadow: 0 0 0 7px Linen;
+    width: 100px;
+    background-color: White;
+    position: absolute;
+    margin-top: 100px;
+    color: inherit;
+    height: 100px;
+	border: 2px solid silver;
+	text-align: center;
+	border-radius: 20vh;
+}
+.title-bar{
+	border: 2px solid silver; 
+	width: 100%; 
+	background-color: silver;
+	color: Linen;
+	text-align: center;
+	height: 150px;
+}
 
 
 /*футер,все прочее*/
