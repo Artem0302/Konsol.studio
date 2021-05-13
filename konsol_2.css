@@ -9,9 +9,11 @@ body{
     background: url(back_header.png);
 	min-height:900px;
 	height: auto;
+	position: relative;
 }
 .bg-img{
-	background-size: cover;
+	background-position: center center;
+    background-size: cover;
 	background-repeat: no-repeat;
 ;
 }
@@ -53,7 +55,7 @@ body{
 	border-radius: 40px;
 	background:white;
 	margin: auto;
-	bottom: 2vh;
+	bottom: 3vh;
 }
 .anchor:hover{
 	background-color: Crimson;
@@ -102,9 +104,6 @@ header{
   display: flex;
   flex-wrap: wrap; 
 }
-.img-p{
-	width: 25%;
-}
 
 /*Портфолио*/
 .portfolio{
@@ -120,7 +119,6 @@ header{
 	text-align: center;
 	margin-left: 5vh;
 }
-
 .ball{
 	margin: auto;
 	display: flex;
@@ -168,6 +166,9 @@ header{
 	align-items: center;
 	background-color: Azure;
 }
+.box:hover{
+	color: OrangeRed;
+}
 .circle{
 	font-size: 120%;
     box-shadow: 0 0 0 7px Linen;
@@ -185,11 +186,99 @@ header{
 	border: 2px solid silver; 
 	width: 100%; 
 	background-color: silver;
-	color: Linen;
+	color: inherit;
 	text-align: center;
 	height: 150px;
 }
 
+/*Команда*/
+.team{
+	display: flex;
+    flex-direction: column;
+	position: relative;
+	background-repeat: no-repeat;
+    background-image: url(back_team.png);
+    padding: 5vh;
+    min-height:530px;
+	height: auto; 
+}
+.our-team{
+	text-align: center;
+	width: 100%;
+	color: Linen
+}
+.pasport{
+	display: inline-block;
+    background:none;
+	border: 5px solid red;
+	border-radius: 20vh;
+	visibility: visible;
+}
+.participans{
+	display: inline-block;
+	visibility: hidden;
+}
+.participans:hover{
+	visibility: visible;
+	cursor: pointer;
+}
+.pasport-text{
+	color:white;
+	text-align: center;   
+}
+.people{
+	flex-grow: 3;
+	display: flex;
+    align-items: center;
+	justify-content: space-around;
+}
+
+/*Обратная связь*/
+.contact{
+	background-color: lightGrey;
+    padding: 5vh;
+}
+.keep-in-touch{
+	text-align: center;
+	width: 100%;
+	color: White;
+	margin-bottom: 3vh;
+}
+.contact-box{
+	position: relative;
+	border-width: 2px;
+	margin: auto;
+	background-color: white;
+	display: flex;
+}
+.adress{
+	background-color: silver;
+	display: inline-block;
+}
+.marg-p2{
+	margin-bottom: 8vh;
+	margin-left: 7vh;
+	color: white;
+	margin-right: 6vh;
+}
+.marg-p1{
+	margin-top: 8vh;
+	margin-left: 7vh;
+	color: orangered;
+}
+.input-div{
+	width: 100%;
+    text-align: center;
+    padding: 8vh;
+    font-size: 130%;
+}
+.input{
+	width: 150%;
+  border-width: 0 0 2px;
+}
+.input:focus{
+	outline: 0;
+}
 
 /*футер,все прочее*/
 .rights{
@@ -213,7 +302,6 @@ header{
   border-radius: 30px;
 }
 footer {
-
   background-color:DimGrey;
   width: 100%;
   display: flex;
@@ -236,4 +324,18 @@ footer {
 }
 .sn:hover{
   color:red;
+}
+
+@media (min-width: 1200px){
+     .img-p{
+     	width: 25%;
+     }
+     .input{
+     	width: 30%;
+     }
+}
+@media (max-width: 900px){
+     .input{
+     	width: 80%;
+     }
 }
